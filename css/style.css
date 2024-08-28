@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../bgsnake.jpeg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;       
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 280px;
+    right: 170px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(255, 251, 2);
+    text-shadow: 2em;
+    font-family: "Fira Sans", sans-serif;
+}
+
+#highBox{
+    position: absolute;
+    top: 280px;
+    left: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(255, 251, 2);
+    text-shadow: 2em;
+    font-family: "Fira Sans", sans-serif;
+}
+
+
+#board{
+    background: url("https://img.freepik.com/premium-photo/night-scene-with-path-through-forest-with-full-moon-generative-ai_900321-29658.jpg");
+    height: 90vmin;
+    width: 90vmin;
+    border: 12px solid rgb(88, 150, 2);
+    display: grid;
+    opacity: 0.9;
+    background-size: cover;       
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.snake{
+    background-color: rgb(186, 198, 58);
+    border: .25vmin solid black;
+    border-radius: 15px;
+    transform: scale(0.8);
+}
+.head{
+    background: linear-gradient(rgb(2, 214, 2),rgb(35, 90, 35));
+    border: 3px solid black;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+.food{
+    background: linear-gradient(rgb(255, 0, 0),rgb(151, 95, 12));
+    border: 3px solid greenyellow;
+    border-radius: 9px;
+}
